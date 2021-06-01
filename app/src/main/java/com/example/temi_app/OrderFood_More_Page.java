@@ -82,7 +82,7 @@ public class OrderFood_More_Page  extends AppCompatActivity {
 
     }
 
-    //Search icon menu on toolbar
+    //Search icon on toolbar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

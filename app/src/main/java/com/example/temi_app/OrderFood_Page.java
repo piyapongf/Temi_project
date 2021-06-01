@@ -36,6 +36,9 @@ public class OrderFood_Page extends AppCompatActivity implements NavigationView.
     //receipt
     String ReceiptExist = "n"; //get this form server by ues username to request
 
+    //basket
+    String BasketExist = "y"; //get this form server by ues username to request
+
     //those data have to get from the server
     String[][] OrderFood_Data_TotalStore = {
             {"Store1","Food and Drink","pic1"},
@@ -258,6 +261,17 @@ public class OrderFood_Page extends AppCompatActivity implements NavigationView.
             //press trash do whattt??????? ans: for delete
 
             case R.id.ic_basket:
+                if(BasketExist == "y"){
+                    Intent i = new Intent(OrderFood_Page.this,OrderFood_Basket_Page.class);
+                    //and send username to server
+                    startActivity(i);
+
+                }
+                else if (BasketExist == "n"){
+                    Intent i = new Intent(OrderFood_Page.this,P7_No_Receipt.class); //go to Order_NoBasket_page
+                    //dont send anything
+                    startActivity(i);
+                }
                 Toast.makeText(getBaseContext(), "Press basket", Toast.LENGTH_LONG).show(); //go to basket page
 
             default:
