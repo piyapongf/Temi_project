@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".P7"
+    android:background="@color/Gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/P7_Custom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Red"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:elevation="4dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Receipt"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF">
+
+
+            </TextView>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="9dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center_horizontal"
+
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        />
+
+                    <LinearLayout
+                        android:padding="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/tableLayoutProduct"
+                            android:stretchColumns="0,1,2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TableLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total price"
+                            android:textSize="25dp"
+                            android:textColor="@color/black"
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            />
+                        <TextView
+                            android:id="@+id/totalPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100 Bath"
+                            android:textSize="25dp"
+                            android:textColor="@color/black"
+                            android:layout_margin="10dp"
+                            android:gravity="right"
+                            android:layout_gravity="right"
+
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/ic_launcher_background"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="my_image_description"
+                        android:layout_marginBottom="20dp"
+                        />
+
+
+
+
+                    <!--GridView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="3"
+                        android:horizontalSpacing="4dp"
+                        android:verticalSpacing="4dp"
+                        android:id="@+id/grid_view"-->
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TEMI_APP</string>
+    <string name="welcome">Welcome</string>
+    <string name="just_wait_for_your_food">Just wait for your food.</string>
+    <string name="we_hope_you_will_enjoy_with_our_food">We hope you will enjoy with our food.</string>
+    <string name="order_food">Order Food</string>
+    <string name="for_store_of_central">For store of central.</string>
+    <string name="store">Store</string>
+    <string name="promotion">Promotion</string>
+    <string name="todo">TODO</string>
+    <string name="nameaccount">NameAccount</string>
+    <color name="f84444">#F84444</color>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_more_order_food_page">More_OrderFood_page</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

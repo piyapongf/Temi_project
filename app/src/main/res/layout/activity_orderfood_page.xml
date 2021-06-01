@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_orderfood"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#FFFFFF"
+    tools:context=".OrderFood_Page"
+    tools:openDrawer="start">
+
+
+    <!--toolbar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/f84444"
+            android:elevation="4dp"
+            android:textAlignment="center"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Order Food"
+            app:titleTextColor="#FFFFFF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:text="Order Food"
+                android:textColor="#FFFFFF"
+                android:textSize="26dp"
+                android:textStyle="bold"></TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:id="@+id/ScrollView_OrderFood"
+            >
+            //android:layout_marginRight="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                //Search view
+                <SearchView
+                    android:id="@+id/SearchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/custom_searchview"></SearchView>
+
+                //Recommend for you
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="250dp"
+                        android:gravity="left"
+                        android:layout_height="match_parent"
+                        android:text="Recommend for you"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"></TextView>
+                    <TextView
+                        android:id="@+id/textclick_recommend"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="More"
+                        android:textSize="20sp"
+                        android:textColor="#F84444"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="40dp"
+                        android:clickable="true"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/recomendzone"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:id="@+id/recycleview_recommend"
+                        android:orientation="horizontal"
+
+                        ></androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                //So hot
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="250dp"
+                        android:gravity="left"
+                        android:layout_height="match_parent"
+                        android:text="So Hot"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"></TextView>
+                    <TextView
+                        android:id="@+id/textclick_sohot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="More"
+                        android:textSize="20sp"
+                        android:textColor="#F84444"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="40dp"
+                        android:clickable="true"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/sohotzone"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:id="@+id/recycleview_sohot"
+                        android:orientation="horizontal"
+
+                        ></androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+                //Total store
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="250dp"
+                        android:gravity="left"
+                        android:layout_height="match_parent"
+                        android:text="Total Store"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"></TextView>
+                    <TextView
+                        android:id="@+id/textclick_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:text="More"
+                        android:textSize="20sp"
+                        android:textColor="#F84444"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="40dp"
+                        android:clickable="true"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/totalzone"
+                    android:padding="10dp">
+
+
+                   <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:id="@+id/recycleview_total"
+                        android:orientation="vertical"
+                        android:overScrollMode="never"
+                        ></androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+    <!--Call menu-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header_orderfood"
+        app:menu="@menu/menu_orderfood"></com.google.android.material.navigation.NavigationView>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
