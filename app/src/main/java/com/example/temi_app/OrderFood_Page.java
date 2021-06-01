@@ -105,7 +105,7 @@ public class OrderFood_Page extends AppCompatActivity implements NavigationView.
         TextView tvr=(TextView)findViewById(R.id.textclick_recommend);
         tvr.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(OrderFood_Page.this,More_OrderFood_page.class);
+                Intent i = new Intent(OrderFood_Page.this,OrderFood_More_Page.class);
                 Bundle b= new Bundle(); //declare Bundle for send 2D array
                 i.putExtra("zone","Recommend");
                 //b.putIntegerArrayListExtra(String name, ArrayList<Integer> value);
@@ -144,7 +144,7 @@ public class OrderFood_Page extends AppCompatActivity implements NavigationView.
         TextView tvs=(TextView)findViewById(R.id.textclick_sohot);
         tvs.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(OrderFood_Page.this,More_OrderFood_page.class);
+                Intent i = new Intent(OrderFood_Page.this,OrderFood_More_Page.class);
                 Bundle b= new Bundle(); //declare Bundle for send 2D array
                 //Intent i = new Intent(getApplicationContext(),More_OrderFood_Page.class);
                 i.putExtra("zone","So Hot");
@@ -181,7 +181,7 @@ public class OrderFood_Page extends AppCompatActivity implements NavigationView.
         TextView tvt=(TextView)findViewById(R.id.textclick_total);
         tvt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(OrderFood_Page.this,More_OrderFood_page.class);
+                Intent i = new Intent(OrderFood_Page.this,OrderFood_More_Page.class);
                 Bundle b= new Bundle(); //declare Bundle for send 2D array
                 //Intent i = new Intent(getApplicationContext(),More_OrderFood_Page.class);
                 i.putExtra("zone","Total Store");

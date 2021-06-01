@@ -4,7 +4,6 @@ import android.content.Context; //send data during class
 import android.view.LayoutInflater; //for variable keep layout
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -12,8 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.temi_app.More_OrderFood_page;
-import com.example.temi_app.OrderFood_Page;
+import com.example.temi_app.OrderFood_More_Page;
 import com.example.temi_app.R;
 
 import java.util.List;
@@ -21,7 +19,7 @@ import java.util.List;
 public class OrderFood_Adapter_Card_vertical extends RecyclerView.Adapter<OrderFood_Adapter_Card_vertical.ViewHolder> {
     List<OrderFood_Data> orderFood_data; //keep data in list form
     Context context;
-    public OrderFood_Adapter_Card_vertical(List orderFood_data, More_OrderFood_page more_orderFood_page) {
+    public OrderFood_Adapter_Card_vertical(List orderFood_data, OrderFood_More_Page more_orderFood_page) {
         this.orderFood_data = orderFood_data;
         this.context = more_orderFood_page;
 

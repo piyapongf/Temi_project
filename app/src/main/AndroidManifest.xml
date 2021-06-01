@@ -11,9 +11,7 @@
         android:theme="@style/AppTheme" >
 
         <activity android:name=".OrderFood_Page" />
-        <activity android:name=".More_OrderFood_page"
-            android:parentActivityName=".OrderFood_Page"/>
-
+        <activity android:name=".OrderFood_More_Page"></activity>
         <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
